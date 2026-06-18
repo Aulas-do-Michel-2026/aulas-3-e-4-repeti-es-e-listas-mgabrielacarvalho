@@ -48,7 +48,7 @@ lista_de_organismos = [[50, 50, 50],
                        ]
 
 maior_media = 0
-posicao_maior_media = [0]
+posicao_maior_media = 0
 
 for i, organismo in enumerate(lista_de_organismos):
     soma = 0
@@ -57,9 +57,9 @@ for i, organismo in enumerate(lista_de_organismos):
         soma = soma + leitura
     
     media = soma/len(organismo)
-
-if media > maior_media:
-    maior_media = media
-    posicao_maior_media = i
+    
+    if media > maior_media:
+        maior_media = media
+        posicao_maior_media = i
 
 print(f'O organismo com maior média é o da posição {posicao_maior_media} da lista.')
